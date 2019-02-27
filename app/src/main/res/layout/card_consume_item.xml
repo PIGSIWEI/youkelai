@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paylist1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pay_state"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:descendantFocusability="blocksDescendants"
+        android:src="@drawable/order_paylogo" />
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/pay_state"
+        android:id="@+id/rl"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gun_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:text="4号油枪" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/gun_number"
+            android:id="@+id/gun_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:text="92#汽油"
+            android:textColor="#8d8d8d"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:layout_below="@id/gun_number"
+            android:text="2019年1月25日 14:36:26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:textColor="#ff0000"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/pay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:text="111元" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv_oil_money"
+        android:layout_marginTop="3dp"
+        android:textSize="11dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pay_money"
+        android:text="订单金额：20元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/tv_oil_money"
+        android:background="#888888"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp" />
+
+
+</RelativeLayout>
+

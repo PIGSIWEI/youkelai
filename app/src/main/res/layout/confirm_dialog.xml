@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:text="请输入操作密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/order_line"></include>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="当前帐号：12345678910"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="操作密码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textCursorDrawable="@drawable/curcor_layout"
+            android:textColor="@color/titlecolor"
+            android:hint="请输入操作密码"
+            android:textSize="12dp"
+            android:theme="@style/MyEditText2"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_confirm2"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</LinearLayout>

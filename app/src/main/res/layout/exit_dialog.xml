@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    app:cardElevation="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_exit"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/exit_text"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:text="确定要退出当前帐号吗"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:background="@drawable/button_cancle_select"
+                android:textColor="@color/titlecolor"
+                android:text="取消"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_warning"
+                android:textColor="@color/white"
+                android:text="确定"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

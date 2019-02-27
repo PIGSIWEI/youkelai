@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:clickable="true"
+    android:background="@drawable/select_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/iv"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_card_errow"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_card_no"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/iv"
+        android:text="卡号：802165"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_addtime"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/iv"
+        android:layout_below="@id/tv_card_no"
+        android:text="充值时间：2019年2月18日 15:21:07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/iv"
+        android:layout_below="@id/tv_addtime"
+        android:text="充值门店：成都市虎门加油站"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/iv"
+        android:layout_below="@id/tv_name"
+        android:text="充值金额：1000.00  赠送金额：29.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="20dp"
+        android:textSize="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:text="充值异常"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@id/tv_money"
+        android:background="#888888"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp" />
+
+</RelativeLayout>

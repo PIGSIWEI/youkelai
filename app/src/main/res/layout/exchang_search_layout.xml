@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:background="@color/white"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+   android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="17dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="查询用户积分"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/order_line"></include>
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textCursorDrawable="@drawable/curcor_layout"
+        android:textColor="@color/titlecolor"
+        android:textSize="14dp"
+        android:hint="请输入用户手机号"
+        android:theme="@style/MyEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="查询"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    </LinearLayout>

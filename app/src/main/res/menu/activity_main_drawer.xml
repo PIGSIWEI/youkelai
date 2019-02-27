@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/printer_test"
+            android:icon="@drawable/icon_dayin"
+            android:title="打印测试" />
+        <item
+            android:id="@+id/nav_home1"
+            android:icon="@drawable/icon_banjie"
+            android:title="班结" />
+        <item
+            android:id="@+id/nav_home2"
+            android:icon="@drawable/icon_dingdan"
+            android:title="查看订单" />
+        <item
+            android:id="@+id/nav_home3"
+            android:icon="@drawable/icon_saoyisao"
+            android:title="扫一扫" />
+        <item
+            android:id="@+id/nav_home4"
+            android:icon="@drawable/icon_youpin"
+            android:title="修改油价" />
+    </group>
+
+    <item android:title="系统设置">
+        <menu>
+            <item
+                android:id="@+id/nav_home5"
+                android:icon="@drawable/icon_anquan"
+                android:title="修改密码" />
+            <item
+                android:id="@+id/nav_home6"
+                android:icon="@drawable/icon_tuichu"
+                android:title="退出登录" />
+        </menu>
+    </item>
+</menu>

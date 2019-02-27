@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/activity_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/titlecolor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/backarrow_bg" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="@string/back"
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="90dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="添加积分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="用户名："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textCursorDrawable="@drawable/curcor_layout"
+            android:textColor="@color/titlecolor"
+            android:textSize="14dp"
+            android:hint="请输入要添加的用户名"
+            android:theme="@style/MyEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="加油金额："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textCursorDrawable="@drawable/curcor_layout"
+            android:textColor="@color/titlecolor"
+            android:textSize="14dp"
+            android:hint="请输入用户加油金额"
+            android:theme="@style/MyEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp"
+            android:text="请选择油号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textColor="@drawable/radiobtn_text_style"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="92 (93) #"
+                    android:button="@null"
+                    android:background="@drawable/radiobtn2_check_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radiobtn_text_style"
+                    android:textAlignment="center"
+                    android:text="98 #"
+                    android:button="@null"
+                    android:background="@drawable/radiobtn2_check_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radiobtn_text_style"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textAlignment="center"
+                    android:text="95 (97) #"
+                    android:button="@null"
+                    android:background="@drawable/radiobtn2_check_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radiobtn_text_style"
+
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:text="0 #"
+                    android:button="@null"
+                    android:background="@drawable/radiobtn2_check_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_confirm"
+        android:text="确定"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_select"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

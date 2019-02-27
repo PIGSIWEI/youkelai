@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:background="@color/activity_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/titlecolor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/backarrow_bg" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="@string/back"
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="65dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="小票样式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ticket_style_default"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="62dp"
+            android:background="@drawable/linearlayout_border"
+            android:layout_width="50dp"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="默认"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:src="@drawable/ticket_style_btn2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/linearlayout_border"
+            android:layout_width="50dp"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="保存"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15dp"
+                        android:text="易成车车帮团购验证小票--顾客联"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ticket_style_btn3"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="278dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ticket_style_btn3"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="时间：[订单时间]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="155.5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="订单：[订单号]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="171dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="原价：[总价格]元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="155.5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="实付：[实付价格]元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="挂牌：[挂牌单价]元/升"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="油号：[油量]升"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="172dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="状态：[已验证发票]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="143dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="发票抬头:[发票]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="169dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/activity_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15dp"
+                        android:text="易成车车帮团购验证小票--顾客联"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ticket_style_btn3"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginLeft="278dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ticket_style_btn3"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="时间：[订单时间]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="155.5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="订单：[订单号]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="171dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="原价：[总价格]元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="155.5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="实付：[实付价格]元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="挂牌：[挂牌单价]元/升"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="油号：[油量]升"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="172dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="状态：[已验证发票]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="143dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+                            android:textSize="15dp"
+                            android:text="操作人员:[操作人员]"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginLeft="139dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/ticket_style_btn3"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/activity_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                </LinearLayout>
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/button_select"
+                    android:textColor="@color/white"
+                    android:text="一键班结"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

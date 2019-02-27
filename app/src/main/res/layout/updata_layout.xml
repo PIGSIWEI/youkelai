@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="上传中，请稍后..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ruoyw.pigpigroad.yichengchechebang.ProgressBar.HorizontalProgressBar
+            android:id="@+id/progress"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </com.ruoyw.pigpigroad.yichengchechebang.ProgressBar.HorizontalProgressBar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_updata_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_updata_confirm"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</LinearLayout>

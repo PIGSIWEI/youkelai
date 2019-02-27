@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/activity_color"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/titlecolor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/backarrow_bg" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="@string/back"
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="小票提示语"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ticket_explain_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/linearlayout_border"
+            android:layout_width="50dp"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="说明"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:text="小票上打印提示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ch.ielse.view.SwitchView
+                android:id="@+id/switchView"
+                android:layout_marginLeft="120dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/switchView_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="不打印"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:textSize="16dp"
+            android:hint="祝你一路顺风，生活愉快！"
+            android:textCursorDrawable="@drawable/curcor_layout"
+            android:gravity="start"
+            android:background="@drawable/edittext_border_layout"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <Button
+            android:textColor="@color/white"
+            android:text="确定"
+            android:background="@drawable/button_select"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

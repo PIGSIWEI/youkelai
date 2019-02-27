@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择开始时间" />
+
+        <RelativeLayout
+            android:id="@+id/select_start_time"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_linearlayout_click">
+            <TextView
+                android:id="@+id/start_time_hint"
+                android:textColor="@color/titlecolor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择开始时间" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/start_time"
+                android:textColor="@color/titlecolor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择结束时间" />
+        <RelativeLayout
+            android:id="@+id/select_end_time"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_linearlayout_click">
+            <TextView
+                android:id="@+id/end_time_hint"
+                android:textColor="@color/titlecolor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择结束时间" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/end_time"
+                android:textColor="@color/titlecolor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:background="@drawable/button_cancle_select"
+                android:textColor="@color/titlecolor"
+                android:text="取消"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/btn_time_select"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_select"
+                android:textColor="@color/white"
+                android:text="确定"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin:'maven' //maven仓库上传插件
+
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.ruoyw.pigpigroad.youkelai"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "v1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions { includeCompileClasspath = true }
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+
+        }
+    }
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        //noinspection GradleCompatible
+        implementation 'com.sunmi:sunmiui:latest.release'
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+        implementation 'com.android.support:design:26.1.0'
+        implementation 'com.android.support:support-v4:26.1.0'
+        implementation 'ch.ielse:switchbutton:1.0.1'
+        implementation 'com.jakewharton:butterknife:7.0.1'
+        testImplementation 'junit:junit:4.12'
+        implementation 'com.facebook.stetho:stetho:1.3.1'
+        implementation 'com.google.zxing:core:3.2.1'      //zxing核心依赖
+        implementation 'com.journeyapps:zxing-android-embedded:3.3.0'  //生成二维码依赖
+        implementation 'com.google.code.gson:gson:2.6.2'   //Gson数据
+        implementation 'com.android.support:cardview-v7:26.1.0'
+        implementation 'com.lzy.net:okgo:3.0.4'  //OKGO
+        implementation 'com.zyao89:zloading:1.0.11'
+        implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.3.4'
+        //阿里云推送
+        implementation 'com.aliyun.ams:alicloud-android-push:3.1.4@aar'
+        implementation 'com.aliyun.ams:alicloud-android-utils:1.1.3'
+        implementation 'com.aliyun.ams:alicloud-android-beacon:1.0.1'
+        implementation 'com.aliyun.ams:alicloud-android-ut:5.2.0'
+        //热修复
+        implementation 'com.aliyun.ams:alicloud-android-hotfix:3.2.3'
+        //Glide
+        implementation 'com.github.bumptech.glide:glide:3.7.0'
+    }
+    buildTypes {
+    }
+}
+dependencies {
+    implementation project(path: ':Library')
+    implementation files('libs/xUtils-2.6.14.jar')
+    implementation files('libs/com.baidu.tts_2.3.2.20180713_6101c2a.jar')
+}

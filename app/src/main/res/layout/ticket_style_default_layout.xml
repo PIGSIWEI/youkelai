@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:text="提示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <include layout="@layout/order_line"></include>
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="是否将小票样式恢复成默认样式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:background="@drawable/button_cancle_select"
+                android:textColor="@color/titlecolor"
+                android:text="取消"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_select"
+                android:textColor="@color/white"
+                android:text="确定"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+

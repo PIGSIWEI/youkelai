@@ -1,0 +1,140 @@
+[
+  {
+    "ico": "icon_banjie",
+    "id": "id_banjie",
+    "sort": "1",
+    "num": "0",
+    "title": "班结管理"
+  },
+  {
+    "ico": "icon_dingdan",
+    "id": "id_dingdan",
+    "sort": "2",
+    "num": "12",
+    "title": "所有订单"
+  },
+  {
+    "ico": "icon_youpin",
+    "id": "id_youpin",
+    "sort": "3",
+    "num": "2",
+    "title": "油品设置"
+  },
+  {
+    "ico": "icon_anquan",
+    "id": "id_anquan",
+    "sort": "4",
+    "num": "0",
+    "title": "安全设置"
+  },
+  {
+    "ico": "icon_saoyisao",
+    "id": "id_saoyisao",
+    "sort": "5",
+    "num": "1",
+    "title": "扫一扫"
+  },
+  {
+    "ico": "icon_wx",
+    "id": "id_wx",
+    "sort": "6",
+    "num": "4",
+    "title": "微信支付"
+  },
+  {
+    "ico": "icon_order_money",
+    "id": "id_order_money",
+    "sort": "7",
+    "num": "0",
+    "title": "现金支付"
+  },
+  {
+    "ico": "icon_cash_order",
+    "id": "id_cash_order",
+    "sort": "8",
+    "num": "1",
+    "title": "现金订单生成"
+  },
+  {
+    "ico": "icon_xcx",
+    "id": "id_xcx",
+    "sort": "9",
+    "num": "0",
+    "title": "小程序订单"
+  },
+  {
+    "ico": "icon_ali",
+    "id": "id_ali",
+    "sort": "10",
+    "num": "12",
+    "title": "支付宝订单"
+  },
+  {
+    "ico": "icon_dayin",
+    "id": "id_dayin",
+    "sort": "12",
+    "num": "2",
+    "title": "打印测试"
+  },
+  {
+    "ico": "icon_xiugai",
+    "id": "id_xiugai",
+    "sort": "13",
+    "num": "0",
+    "title": "修改密码"
+  },{
+     "ico": "icon_paying",
+     "id": "id_paying",
+     "sort": "14",
+     "num": "0",
+     "title": "待处理订单"
+  },{
+     "ico": "icon_vip",
+     "id": "id_vip",
+     "sort": "15",
+     "num": "0",
+     "title": "会员查询"
+      },{
+     "ico": "icon_point",
+     "id": "id_point",
+     "sort": "16",
+     "num": "0",
+     "title": "积分操作"
+      },{
+     "ico": "icon_face",
+     "id": "id_face",
+     "sort": "17",
+     "num": "0",
+     "title": "人脸核身"
+      },{
+     "ico": "icon_gift",
+     "id": "id_gift",
+     "sort": "18",
+     "num": "0",
+     "title": "礼品核销"
+      },{
+     "ico": "icon_flash_pay",
+     "id": "id_flash_pay",
+     "sort": "19",
+     "num": "0",
+     "title": "闪付订单"
+      },{
+      "ico":"icon_car_pay",
+      "id":"id_car_pay",
+      "sort":"20",
+      "num":"0",
+      "title":"车牌付"
+      },{
+      "ico":"icon_hotfix",
+      "id":"id_hotfix",
+      "sort":"21",
+      "num":"0",
+      "title":"热更新"
+      },{
+      "ico":"icon_hot",
+      "id":"id_hot",
+      "sort":"22",
+      "num":"0",
+      "title":"当前活动"
+      }
+]

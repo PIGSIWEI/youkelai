@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/titlecolor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/back_ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/backarrow_bg" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="@string/back"
+                android:id="@+id/back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="90dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="小票联数设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ticketnumberlist1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="一键加油小票"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ticketlist_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="15dp"
+            android:text="两联 (默认)"
+            android:textColor="@color/titlecolor" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_bg" />
+    </LinearLayout>
+<include layout="@layout/order_line"></include>
+    <LinearLayout
+        android:id="@+id/ticketnumberlist2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="团购小票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketlist_tv2"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="157dp"
+            android:textColor="@color/titlecolor"
+            android:text="两联 (默认)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_bg"
+            android:layout_width="20dp"
+            android:layout_height="17dp" />
+    </LinearLayout>
+    <include layout="@layout/order_line"></include>
+    <LinearLayout
+        android:id="@+id/ticketnumberlist3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="闪付小票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketlist_tv3"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="157dp"
+            android:textColor="@color/titlecolor"
+            android:text="两联 (默认)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_bg"
+            android:layout_width="20dp"
+            android:layout_height="17dp" />
+    </LinearLayout>
+    <include layout="@layout/order_line"></include>
+    <LinearLayout
+        android:id="@+id/ticketnumberlist4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="小票提示语"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketlist_tv4"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="141dp"
+            android:textColor="@color/titlecolor"
+            android:text="两联 (默认)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_bg"
+            android:layout_width="20dp"
+            android:layout_height="17dp" />
+    </LinearLayout>
+    <include layout="@layout/order_line"></include>
+    <LinearLayout
+        android:id="@+id/ticketnumberlist5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="储蓄卡支付小票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketlist_tv5"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/titlecolor"
+            android:text="两联 (默认)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_bg"
+            android:layout_width="20dp"
+            android:layout_height="17dp" />
+    </LinearLayout>
+    <include layout="@layout/order_line"></include>
+
+</LinearLayout>

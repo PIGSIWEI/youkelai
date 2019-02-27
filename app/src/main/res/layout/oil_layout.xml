@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:background="@color/activity_color"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/activity_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/titlecolor"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/back_ll"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/backarrow_bg" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:text="@string/back"
+                    android:id="@+id/back_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="油价"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/changeoil_record_iv"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/linearlayout_border"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="改价记录"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:text="油号"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+            <include layout="@layout/oil_vertical_line"></include>
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:text="当前挂牌号"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+            <include layout="@layout/oil_horizontal_line"></include>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="国五0#车用柴油"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <include layout="@layout/oil_vertical_line"></include>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="6.06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/oil_horizontal_line"></include>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="国五92#车用汽油"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <include layout="@layout/oil_vertical_line"></include>
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="6.06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/oil_horizontal_line"></include>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="12.5dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingRight="3dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="国五898#车用汽油"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <include layout="@layout/oil_vertical_line"></include>
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:text="6.06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/oil_horizontal_line"></include>
+            <Button
+                android:id="@+id/changeoil_btn"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="修改油价"
+                android:background="@drawable/button_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

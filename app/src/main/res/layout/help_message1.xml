@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="100dp"
+
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/backorderlogo"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="设备出现卡纸现象的原因？如何解决？"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:text="1.如果机器小票打印纸发出嗒嗒嗒的声音，可以判"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="断上打印卡纸。这是新装的小票纸较厚引起的。"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="临时解决办法："
+            android:textColor="@color/titlecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:text="将小票打印纸抽出20-30cm，再装。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="长期解决办法："
+            android:textColor="@color/titlecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:text="在打印采购时，确保规格。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="2.排除第一种原因外就是设备打印机盖子接合太紧或"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        android:text="者设备轮胎坏了，目前记录中尚未出现过这种情况。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        android:text="若出现，请更换备用机，将坏了的设备寄回公司分析"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        android:text="具体原因并维修。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>

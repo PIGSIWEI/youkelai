@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="#a0a0a0"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp" />
+        <TextView
+            android:id="@+id/oil_price"
+            android:gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="null" />
+        <ImageView
+            android:background="#a0a0a0"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp" />
+        <TextView
+            android:id="@+id/oil_count"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="null" />
+        <ImageView
+            android:background="#a0a0a0"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp" />
+        <TextView
+            android:id="@+id/oil_lit"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="null" />
+        <ImageView
+            android:background="#a0a0a0"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp" />
+        <TextView
+            android:id="@+id/oil_money"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="null" />
+        <ImageView
+            android:background="#a0a0a0"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="273dp"
+        android:layout_height="0.7dp"
+        android:background="#a0a0a0"
+        tools:ignore="Suspicious0dp" />
+</LinearLayout>

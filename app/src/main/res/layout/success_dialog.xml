@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:text="添加积分成功！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/order_line"></include>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="添加用户：12345678910"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:text="添加积分：180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:text="剩余积分：4368"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel2"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_confirm3"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="继续添加"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</LinearLayout>

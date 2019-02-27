@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:text="提示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/order_line"></include>
+    <TextView
+        android:textColor="@color/black"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:text="油枪统计是按油枪号来统计各个油枪的订单号、金额等"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="注意:油枪统计与班结无关，也就是打印油枪统计不会班结"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_know"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_select"
+        android:text="知道了"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

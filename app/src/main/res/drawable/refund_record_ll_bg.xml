@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--?xml version="1.0" encoding="utf-8"?-->
+
+    <!--触摸状态时颜色-->
+    <item android:drawable="@color/button_select_bg" android:state_focused="true" />
+    <!--点击状态是颜色-->
+    <item android:drawable="@color/button_select_bg" android:state_pressed="true" />
+    <!--默认颜色-->
+    <item android:drawable="@color/titlecolor" />
+</selector>

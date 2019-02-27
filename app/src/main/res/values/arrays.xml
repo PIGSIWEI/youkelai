@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reson">
+        <item>他站付错油款到本站</item>
+        <item>多付金额</item>
+        <item>少付金额</item>
+        <item>支付错误</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pay_type">
+        <item>微信公众号</item>
+        <item>支付宝</item>
+        <item>微信小程序</item>
+        <item>app</item>
+    </string-array>
+    <string-array name="order_type">
+        <item>本平台</item>
+        <item>非本平台</item>
+    </string-array>
+    <string-array name="point_type">
+        <item>卡积分归集</item>
+        <item>购物</item>
+        <item>赠送</item>
+    </string-array>
+</resources>

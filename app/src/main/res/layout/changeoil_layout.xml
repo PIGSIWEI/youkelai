@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/activity_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:background="@color/titlecolor"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/back_ll"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/backarrow_bg" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:text="@string/back"
+                    android:id="@+id/back_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="90dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:text="修改油价"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="油号"
+            android:layout_width="147.5dp"
+            android:layout_height="match_parent" />
+            <include layout="@layout/oil_vertical_line"></include>
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:text="当前挂牌价"
+                android:layout_width="102.5dp"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/oil_vertical_line"></include>
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="修改挂牌价"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/oil_horizontal_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="147.5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="国五0#车用"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginBottom="15dp"
+                    android:text="柴油"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <include layout="@layout/oil_vertical_line"></include>
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="6.06"
+                android:textColor="@color/black" />
+
+            <include layout="@layout/oil_vertical_line"></include>
+
+            <EditText
+                android:textCursorDrawable="@drawable/curcor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:textColor="@color/titlecolor" />
+        </LinearLayout>
+        <include layout="@layout/oil_horizontal_line"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:text="国五92#车用"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+
+                    android:text="汽油"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/oil_vertical_line"></include>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="6.06"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/oil_vertical_line"></include>
+            <EditText
+                android:textCursorDrawable="@drawable/curcor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:textColor="@color/titlecolor" />
+        </LinearLayout>
+        <include layout="@layout/oil_horizontal_line"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:text="国五898#车用"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+
+                    android:text="汽油"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/oil_vertical_line"></include>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="6.06"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/oil_vertical_line"></include>
+            <EditText
+                android:textCursorDrawable="@drawable/curcor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:textColor="@color/titlecolor" />
+        </LinearLayout>
+        <include layout="@layout/oil_horizontal_line"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:text="国五92#车用"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+
+                    android:text="汽油"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/oil_vertical_line"></include>
+            <RelativeLayout
+                android:id="@+id/selectTime"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:text="请选择生效时间"
+                    android:textColor="@color/titlecolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/currentTime"
+                    android:visibility="invisible"
+                    android:textColor="@color/titlecolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <include layout="@layout/oil_horizontal_line"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="说明："
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="1.只能修改挂牌价，单价：元/升"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="2.不能输入表示此油价价格不动改"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="设置打印停顿时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="就是商户联与顾客间隔的时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/order_line"></include>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ticketpause_tv1"
+            android:text="不停顿(默认)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketpause_tv2"
+            android:text="5秒"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketpause_tv3"
+            android:layout_marginTop="10dp"
+            android:text="10秒"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ticketpause_tv4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="15秒"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="200dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/ticketpause_1"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_select"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <RadioButton
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/ticketpause_2"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_select"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ticketpause_3"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_select"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <RadioButton
+                    android:id="@+id/ticketpause_4"
+                    android:layout_marginTop="9dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_select"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+</LinearLayout>

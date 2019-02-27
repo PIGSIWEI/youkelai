@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:background="@color/activity_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/order_line"
+            ></include>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="微信扫码付款操作"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/order_line"
+            ></include>
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:hint="请输入团购券码"
+                android:theme="@style/MyEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_yanzhen"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="验证"
+                android:background="@drawable/button_select"
+                android:layout_width="60dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <include layout="@layout/order_line"></include>
+        <LinearLayout
+            android:id="@+id/scan_ll"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/select_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/group_buying_bg"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:text="扫一扫，读取团购券码"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>

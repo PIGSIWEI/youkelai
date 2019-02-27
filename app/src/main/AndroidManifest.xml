@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruoyw.pigpigroad.yichengchechebang">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 集成时请添加下列权限 -->
+    <!-- 测试完成后，您自己的appId appKey secretKey 请在 SynthActivity 和 MiniActivity 中修改 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".Hotfit.SophixStubApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_ykl"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_ykl"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--服务配置-->
+        <meta-data android:name="com.alibaba.app.appkey" android:value="25554744"/> <!-- 请填写你自己的- appKey -->
+        <meta-data android:name="com.alibaba.app.appsecret" android:value="0dfa95e75c6b35392a0cf2e974eb1179"/> <!-- 请填写你自己的appSecret -->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="25554744" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="0dfa95e75c6b35392a0cf2e974eb1179" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCC7hp0OuDOiKPeL/go+uWTiW/MMM2JSKhrrkfl8taS+r7Hk35EDdzJraK1KVymIX1x59faPs+PxupJPhZvJf5GwF3lXY11+1R26+/cZc4GywcieLkBCVX1Gr+/yQe7Zhx9oXCPYNhCUQVsr2j2kIh0002wEfTNvwKUmBnoP+VBkvIRDuIFVT/03aWFK4QjzykhVjFWrFotggMpogIH7P+PNbXPKxQLGs9NXQ5eqg+VkOS0EfSxdXy06Q1C5qBFR+jU5KMbMSPJCWXSwKOhfZVXwQWkVzW9u0BmOugI7pJwoLSC+AkHIuY4s3u7wBgPSJwkMMtVVZZQLQbWUDVuOC91AgMBAAECggEAXxwFvX7zxTQ/DWz9MQ+o63a/7q1Y8SwFpEsy0ViJBLX/Fk0PQPJs+1gVxNHqCohzbuYCx/guoPvXPyNJ+q23u7+Ltc0ysIzE+6pCUHDnq8maQjE9+wHEHkuzFOc8paX0dlJqyMyJ7AqdDSmS7uFpLqw8V/WDRl5Fypl+4FZh/DJvgP5JE8oL8g45/+SJAmVg//oDgUtVexb6lGoHPil4S0HRRK5JjhjXa50h2kq4kqxVtfRhhdrVvsbdcU7o1S81PcJFyCG3s1V56bejStjo+N6FvpOGelu4i4lgMq4iFVwSwfX+kGEgMco+Q8ekOf/jef4Nt26VAgkXcVFcVVundQKBgQC5eZkqsXF0IYFazq8qkRkJvrZWAtl1M4xU8uNSZD7ro6zu1y9NsgR2/+JZ6sEySufmsyxOvqZM8+F00u/THLdnLf5m9780JkWLbxhRySQksgwyYnj9MfEaPjF5wdPs5krg/4D6Z8gTrtlo6BlDOESZFFugtnJFkvg+e7i5tMiFOwKBgQC0twasWiM9Xjgbd3nw/Tq+CBdUDutPEcdnnMQpfqXMsslRoGpixfoJJTzQeM+Jq+vCxTPWfnfcQEa4F8uDTMaA7Rp5GtPtuf/quCNkLIaGWJvE0CxOJGSHOMQn2aQIun/a5B572c2PuwlFNQaCwETRPcIDjpDpDKwai2yykG8TDwKBgQC5I2H6tcj0DQXcKPe8271Mduv3Cz0ZumzX1uOGuL395RGYD4AOZCYEywOckbJri03UgQE3USMbKU3hmTT/XGjOO6D4E1Dus000E58I9Gh5oKiAGr9+rb1nXrFwQkRS8sXHtgN+8N1MmHo4N4YQDTicPTABSlziigP2CvWnmYeXRQKBgFYlPXghi9TwOhzVynpXrI3z+3LlncRWfFDnCReiuNSokZFov+4P5A5CAwh53q0JGF0Ddp+UL/z9YvjU1v3jNmk1Hb6HTGlxlg5E8xIIq6QVT0P13HjvnkBbjh5VAH3ssZAd2G4/uF8A0P19tnnTv7pjDz500p1VniEVP56rfVd/AoGAKKzE1uaqA8coN8jaNOYHoihQvopUkvp4woxhSBv5xEGVTBCFaDaAisS6MEkcgMnwzabJ8ehDPIYL3vWb8GfgnxtWsN8QmGZ+Eab8CP4xBGtEzOKd8gHuyrl4vwUcZTQYYmSVLllbYjC4EdVnxwIZIJf2E75vVwaMiw5GK6sxqD4=" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.MainActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.InfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.OrderAudit"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.HelpActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.MessageActivity"
+            android:theme="@style/AppTheme.Slide"
+
+            >
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.GiftActivity"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.OilActivity"
+            android:theme="@style/AppTheme.Slide"
+
+            >
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ChangeOilActivity"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ChangeOilRecordActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.TicketSettingActivity"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.TicketHintActivity"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.TicketNumberActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.TicketStyleAcitvity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ClassActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.StatisticsActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+
+        <service android:name="com.ruoyw.pigpigroad.yichengchechebang.TimeServer.LocationService" />
+
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ExchangeActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ExchangeAddActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.RefundActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.RefundRecordActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ClassRecordActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ClassStatisticsActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.OilStatisticsSituationActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.GroupBuyingActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.ApplicationRefundActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.PasswordActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.Activitystart.StartActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.SpecialCarAcitivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.SpecialcarQRcodeActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.MarketingActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.OilPriceActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.OilChangePriceActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name="com.ruoyw.pigpigroad.yichengchechebang.CheckTodayActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".PrinterTestActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".ZxingUtils.view.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".ZxingUtils.view.ShowResultActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".ZxingUtils.OrderBackActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppTheme.Slide" />
+        <activity
+            android:name=".AllOrderActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".ScanActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".AliScanActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".SearchListActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".CashActivity"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name=".ZBarView"
+            android:theme="@style/AppTheme.Slide">
+
+        </activity>
+        <activity
+            android:name=".CashOrderActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".CarScanActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+
+        <service android:name=".Util.UpdateVersionService"></service>
+        <service android:name=".Receiver.PollingReceiver"></service>
+        <service android:name=".Receiver.MoneyService"></service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.InfoActivity"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Password.PasswordChange"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".Password.BackOffPasswordChange"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".Password.CarPasswordChange"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".Password.OilPasswordChange"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".TestPrintActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".OilSettingActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".TestActivity">
+
+        </activity>
+
+        <activity android:name=".MenuManageActivity"
+
+            ></activity>
+        <activity
+            android:name=".PayingActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".VipSearchActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".PointActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".PointSearchActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".CenterSettingActivity"
+            android:theme="@style/AppTheme.Slide">
+        </activity>
+        <activity android:name=".CenterParamActivity"
+            android:theme="@style/AppTheme.Slide"
+            ></activity>
+
+        <receiver
+            android:name=".Receiver.MyMessageReceiver"
+            android:exported="false"> <!-- 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 -->
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".FlashOrderActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".BuleTooth.ClientActivity">
+
+        </activity>
+        <activity
+            android:name=".CarPayActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity
+            android:name=".CarGunMoneyActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".HotfixActivity"></activity>
+        <activity
+            android:name=".HotActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".MenuManageActivity2"
+            android:theme="@style/AppTheme.Slide">
+        </activity>
+        <activity android:name=".CardIcActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".CardReChargeActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".CardConsumeActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+        <activity android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.Slide"></activity>
+    </application>
+
+</manifest>

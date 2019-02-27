@@ -1,0 +1,61 @@
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/order_paylogo"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/oilBox"
+                android:text="4号油枪"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/paymoney"
+                android:text="111元"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kindoil"
+                android:text="92#汽油"
+                android:textSize="12dp"
+                android:textColor="#8d8d8d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/paytime"
+                android:text="17:19:38"
+                android:textSize="12dp"
+                android:textColor="#8d8d8d"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/orderback"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/order_backlogo"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+</LinearLayout>

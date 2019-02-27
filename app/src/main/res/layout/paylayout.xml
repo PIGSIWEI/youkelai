@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/triangle_up" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/iv_triangle"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_rectangle_corner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nowpayorder"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/order_line"></include>
+
+
+            </LinearLayout>
+               <LinearLayout
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="217dp">
+                   <android.support.v4.widget.SwipeRefreshLayout
+                       android:id="@+id/swipeRefreshLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                   <ListView
+                       android:id="@+id/paylayout_lv"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   </android.support.v4.widget.SwipeRefreshLayout>
+               </LinearLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

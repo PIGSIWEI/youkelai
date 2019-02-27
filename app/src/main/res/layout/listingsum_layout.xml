@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18dp"
+            android:text="班结金额设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/order_line"></include>
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="15dp"
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/radio_tv1"
+               android:text="挂牌金额"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+          <LinearLayout
+              android:id="@+id/radio_tv2"
+              android:layout_marginTop="25dp"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:text="应结金额 (未减手续费)"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:text="协议金额-油站抵用券-积分抵扣"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+           <LinearLayout
+               android:id="@+id/radio_tv3"
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_marginTop="25dp"
+                   android:text="协议金额"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:text="原价/挂牌单价*协议单价-会员优惠-专车优惠"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+       </LinearLayout>
+       <RadioGroup
+           android:id="@+id/radioGroup"
+           android:layout_marginLeft="13dp"
+           android:layout_marginTop="18dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+               <RadioButton
+                   android:id="@+id/radio_1"
+                   android:button="@null"
+                   android:background="@drawable/radiobutton_select"
+                   android:layout_width="18dp"
+                   android:layout_height="18dp" />
+           <RadioButton
+               android:id="@+id/radio_2"
+               android:layout_marginTop="45dp"
+               android:button="@null"
+               android:background="@drawable/radiobutton_select"
+               android:layout_width="18dp"
+               android:layout_height="18dp" />
+           <RadioButton
+               android:id="@+id/radio_3"
+               android:layout_marginBottom="30dp"
+               android:layout_marginTop="40dp"
+               android:button="@null"
+               android:background="@drawable/radiobutton_select"
+               android:layout_width="18dp"
+               android:layout_height="18dp" />
+       </RadioGroup>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_listingsum_cancel"
+            android:background="@drawable/button_cancle_select"
+            android:textColor="@color/titlecolor"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/btn_listingsum_confrim"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_select"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_width="100dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    </LinearLayout>
